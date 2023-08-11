@@ -1,3 +1,5 @@
+package PracticeKotlinFundamentals
+
 fun main() {
     val winningBid = Bid(5000, "Private Collector")
 

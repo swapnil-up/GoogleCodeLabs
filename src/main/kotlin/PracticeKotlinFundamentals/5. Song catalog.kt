@@ -1,3 +1,5 @@
+package PracticeKotlinFundamentals
+
 class Song(title:String, artist:String, yearPublished: String, playCount:Int){
     val title=title
     val artist=artist
@@ -21,6 +23,6 @@ class Song(title:String, artist:String, yearPublished: String, playCount:Int){
 fun main(){
 
 
-    val s=Song("ThunderStruck","AC/DC","2002-12-12",1500)
+    val s= Song("ThunderStruck","AC/DC","2002-12-12",1500)
     s.displaySongInfo()
 }

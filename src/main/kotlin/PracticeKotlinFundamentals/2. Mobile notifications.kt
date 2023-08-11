@@ -1,3 +1,5 @@
+package PracticeKotlinFundamentals
+
 fun main() {
     val morningNotification = 51
     val eveningNotification = 135

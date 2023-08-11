@@ -1,3 +1,5 @@
+package PracticeKotlinFundamentals
+
 open class Phone(var isScreenLightOn: Boolean = false){
     open fun switchOn() {
         isScreenLightOn = true
@@ -13,7 +15,7 @@ open class Phone(var isScreenLightOn: Boolean = false){
     }
 }
 
-class FoldablePhone(isScreenLightOn: Boolean,var isFolded:Boolean=false):Phone(isScreenLightOn){
+class FoldablePhone(isScreenLightOn: Boolean,var isFolded:Boolean=false): Phone(isScreenLightOn){
     override fun switchOn(){
         if(isFolded) println("unfold first")
         else{
@@ -35,8 +37,8 @@ class FoldablePhone(isScreenLightOn: Boolean,var isFolded:Boolean=false):Phone(i
 }
 
 fun main(){
-    var p=Phone(true)
-    var f=FoldablePhone(true,true)
+    var p= Phone(true)
+    var f= FoldablePhone(true,true)
     p.switchOn()
     f.switchOn()
 }

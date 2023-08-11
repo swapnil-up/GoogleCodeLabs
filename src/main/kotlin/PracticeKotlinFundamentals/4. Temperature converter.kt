@@ -1,3 +1,5 @@
+package PracticeKotlinFundamentals
+
 fun main() {
     val Celsius=27.0
     val Kelvin=350.0
