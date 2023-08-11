@@ -13,16 +13,18 @@ fun main() {
 }
 
 fun ticketPrice(age: Int, isMonday: Boolean): Int {
-    if (age in 0..12){
-        return(15)
-    }
-    else if (age in 12..60){
-        return(30)
-    }
-    else if(age in 60..100){
-        return(20)
-    }
-    else{
-        return(-1)
+    when (age) {
+        in 0..12 -> {
+            return(15)
+        }
+        in 12..60 -> {
+            return(30)
+        }
+        in 60..100 -> {
+            return(20)
+        }
+        else -> {
+            return(-1)
+        }
     }
 }

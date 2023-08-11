@@ -11,7 +11,7 @@ fun main() {
 
     printFinalTemperature(Celsius,"Celsius","Fahrenheit"){cToF}
     printFinalTemperature(Kelvin,"Kelvin","Celsius"){kToC}
-    printFinalTemperature(Fahrenheit,"Fahrenheit","Kelvin"){fToK}
+    printFinalTemperature(10.0, "Fahrenheit", "Kelvin") { 5.0 / 9.0 * (it - 32) + 273.15 }
 
 }
 

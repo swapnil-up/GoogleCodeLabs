@@ -10,6 +10,9 @@ class Song(title:String, artist:String, yearPublished: String, playCount:Int){
     fun displaySongInfo(){
         println("$title, performed by $artist, was released in $yearPublished.")
     }
+    val isPopular: Boolean
+        get() = playCount >= 1000
+
     fun popularity(playCount:Int){
         if (playCount<1000){
             println("not popular")
@@ -23,6 +26,6 @@ class Song(title:String, artist:String, yearPublished: String, playCount:Int){
 fun main(){
 
 
-    val s= Song("ThunderStruck","AC/DC","2002-12-12",1500)
+    val s= Song("ThunderStruck","AC/DC","2002-12-12",1_000_000)
     s.displaySongInfo()
 }
